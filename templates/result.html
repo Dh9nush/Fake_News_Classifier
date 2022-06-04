@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HOME</title>
+      
+      </head>
+      <body>
+         <header><div class="container">
+            <div id ="brandname">
+               ml app
+
+            </div>
+            <h2>FAKE NEWS DETECTOR</h2>
+
+         </div>
+         </header>
+         <p style="color:blue;font-size:20;text-align:center"><b>results for comment </b><p>
+         <div class = "results">
+
+         
+         {% if (prediction == 1)%}
+         <h2 style ="color:red">Fake</h2>
+         {% elif (prediction== 0) %}
+         <h2 style ="color:green">NotFake</h2>
+         {%endif %}
+         </div>
+      </body>
+      <html>

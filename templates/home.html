@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Fake News Checker</title>
+      
+      </head>
+      <body>
+         <header><div class="container">
+            <div id ="brandname">
+               <p style="color:blue;font-size:20;text-align:center"><b>Made Using Machine Learning Algorithm </b><p>
+                  
+
+            </div>
+            <h2>   <p style="color:rgb(247, 0, 0);font-size:20;text-align:center"><b>FAKE NEWS DETECTOR </b></h2>
+         </div>
+         </header>
+         <div class="ml-container">
+
+            <form action="{{ url_for('CHECK')}}"method="POST">
+               <p>ENTER NEWS HERE</p>
+               <textarea name="message" rows="6" cols="50"></textarea>
+               <br>
+               <button></button>
+            </form>
+         </div>
+      <form>
+      <style>
+         body {
+         background-image: url("{{url_for('static', filename='templates/86081wp7461541-fake-news-wallpapers.jpg')}}");
+         }
+</style>
+      
+   
+   </body>
+</html>
